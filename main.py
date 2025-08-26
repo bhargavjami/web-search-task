@@ -39,7 +39,7 @@ class WebCrawler:
         if results:
             print("Search results:")
             for result in results:
-                print(f"- {undefined_variable}")
+                print(f"- {result}")
         else:
             print("No results found.")
 
@@ -103,11 +103,6 @@ class WebCrawlerTests(unittest.TestCase):
         crawler.print_results(["https://test.com/result"])
 
         # Assert that the output was captured correctly by mock_stdout
-
-if __name__ == "__main__":
-    unittest.main()  # Run unit tests
-    main()  # Run your main application logic 
-
-
+###########################
 if __name__ == "__main__":
     main()
